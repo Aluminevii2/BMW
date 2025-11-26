@@ -95,3 +95,36 @@ margin-right: -5px;
     padding-bottom: 59px;
     padding-right: 60px;    
 }
+
+/* slides bmw*/
+
+.description-bmw{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.style-b{
+    color: #81C4FF;
+    font-weight: bold;
+}
+
+.style-m{
+    font-weight: bold;
+    color: #16588E;
+}
+
+.style-w{
+    font-weight: bold;
+    color: #E7222E;
+}
+
+.b h2 {
+    margin: 19px 0 5px 0 ;
+}
+
+.description-style{
+    font-weight: bold;
+    margin: 0;
+}
