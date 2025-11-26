@@ -103,6 +103,9 @@ margin-right: -5px;
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    margin-top: 30px;
+    z-index: 100000;
+    margin-bottom: -150px;
 }
 
 .style-b{
@@ -125,6 +128,65 @@ margin-right: -5px;
 }
 
 .description-style{
+    font-size: 20px;
     font-weight: bold;
     margin: 0;
+}
+
+/* slider */
+
+.slider {
+    z-index: -99999;
+    position: relative;
+    display: flex;        /* ← добавляем это */
+    align-items: center;  /* ← можно добавить для ровного выравнивания */
+}
+
+.models {
+    position: relative;
+}
+.lines {
+    position: relative;
+    bottom: 0;
+}
+.car-models {
+    position: absolute;
+    bottom: 250px;
+    left: 19px;
+    z-index: 2;
+}
+.star {
+    align-items: center;
+    text-align: center;
+    margin-top: -200px;
+    padding-left: 20%;
+}
+.title-models {
+    text-align: center;
+    font-size: 72px;
+    color: #7A7A7A;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+.rating {
+    text-align: center;
+    margin-top: 0;
+    font-size: 24px;
+    padding-bottom: 30px;
+}
+.position__item-models{
+    padding-left: 0;
+}
+
+.item-models {
+    text-align: center;
+    list-style: none;
+    font-weight: bold;
+}
+
+.arrow{
+}
+
+.arrow-next {
+    padding-left: 20px;
 }
