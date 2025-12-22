@@ -135,11 +135,15 @@ margin-right: -5px;
 
 /* slider */
 
-.slider {
-    z-index: -99999;
+.slides{
     position: relative;
-    display: flex;        /* ← добавляем это */
-    align-items: center;  /* ← можно добавить для ровного выравнивания */
+    z-index: -9;
+}
+.slider {
+    z-index: -10;
+    position: relative;
+    display: flex;    
+    align-items: center; 
 }
 
 .models {
@@ -190,3 +194,54 @@ margin-right: -5px;
 .arrow-next {
     padding-left: 20px;
 }
+
+
+/* Footer */
+
+.footer {
+    position: relative;
+    z-index: 10;           
+    background: #d3d3d3;
+    padding: 40px 0 0 0;
+    margin-top: -280px;     
+}
+
+.thx{
+    font-size: 32px;
+}
+
+.footer-text{
+    text-align: center;
+}
+
+.footer-description{
+    font-style: italic;
+}
+
+.sinestatator{
+    text-align: left;
+    z-index: 100;
+    margin: 0;
+    padding-left: 20px;
+    width: 150px;
+    height: 50px;
+    
+}
+
+.footer-icons {
+    display: flex;
+    gap: 25px;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    position: absolute;
+    right:0px;
+    width: 300px;
+    bottom:60px;
+
+    
+}
+
+
+
+
