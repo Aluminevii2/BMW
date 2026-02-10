@@ -33,6 +33,25 @@ body {
     list-style: none;
 
 }
+
+.btn{
+    background-color: #F1C0C0;
+    border-radius: 20px;
+    width: 92px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.btn-txt{
+    font-style: bold;
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+    
+}
+
 .lines1 {
 color: #81C4FF;
 margin-left: 2px;
@@ -241,6 +260,8 @@ margin-right: -5px;
 
     
 }
+
+
 
 
 
