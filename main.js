@@ -63,3 +63,38 @@ section.appendChild(background);
 
 document.getElementById("app").appendChild(section);
 
+
+
+
+
+
+const bestModelsBtn = document.getElementById("bestModelsBtn");
+const searchContainer = document.getElementById("searchContainer");
+const result = document.getElementById("result");
+
+const models = {
+    "m3": "data/home/m3.png",
+    "x6": "data/home/x6.png",
+    "m5": "data/home/CAR.png",
+    "x7": "data/home/x7.png"
+};
+
+bestModelsBtn.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    searchContainer.innerHTML = `
+        <input type="text" id="searchInput" placeholder="Введите модель BMW...">
+        <button id="searchBtn">Поиск</button>
+    `;
+
+    document.getElementById("searchBtn").addEventListener("click", function () {
+        const value = document.getElementById("searchInput").value.toLowerCase();
+
+        if (models[value]) {
+            result.innerHTML = `<img src="${models[value]}" width="400px">`;
+        } else {
+            result.innerHTML = "<p>Модель не найдена</p>";
+        }
+    });
+});
+

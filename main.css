@@ -1,5 +1,5 @@
-*{
-    font-family:Roboto, sans-serif;
+* {
+    font-family: Roboto, sans-serif;
 }
 
 
@@ -10,9 +10,10 @@ body {
 }
 
 .censura {
-        background-color: #E7E7E7;
+    background-color: #E7E7E7;
 }
-.header{
+
+.header {
     padding-top: 30px;
     padding-right: 30px;
     padding-left: 30px;
@@ -23,10 +24,10 @@ body {
     margin: 0;
 }
 
-.list{
+.list {
     display: flex;
     justify-content: space-between;
-    gap:30px;
+    gap: 30px;
 }
 
 .item {
@@ -34,70 +35,102 @@ body {
 
 }
 
-.btn{
+.btn {
     background-color: #F1C0C0;
     border-radius: 20px;
     width: 92px;
     height: 52px;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
-.btn-txt{
+.btn-txt {
     font-style: bold;
     font-size: 15px;
     margin: 0;
     text-align: center;
-    
+
 }
 
 .lines1 {
-color: #81C4FF;
-margin-left: 2px;
-margin-right: -5px;
-}
-.lines2 {
-color: #16588E;
-margin-right: -5px;
-}
-.lines3 {
-color: #E7222E;
-margin-right: -5px;
+    color: #81C4FF;
+    margin-left: 2px;
+    margin-right: -5px;
 }
 
-.item a{
-     text-decoration: none;
+.lines2 {
+    color: #16588E;
+    margin-right: -5px;
+}
+
+.lines3 {
+    color: #E7222E;
+    margin-right: -5px;
+}
+
+.item a {
+    text-decoration: none;
     color: black;
     font-weight: bold;
 }
 
-.item a:hover{
+.item a:hover {
     color: #787878;
-    transition:0.2s;
+    transition: 0.2s;
 }
+
+
+
+
+
+#searchContainer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#searchContainer input {
+    border-radius: 60px;
+    padding: 10px;
+    width: 250px;
+}
+
+#searchContainer button {
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+
+
 
 /* container*/
 
 
-.container__position-car{
+.container__position-car {
     display: flex;
     justify-content: space-between;
 }
 
 .container-car {
 
-        padding: 0;
-        margin: 0;
+    padding: 0;
+    margin: 0;
 }
 
 .title {
     font-size: 37px;
-      padding: 141px 141px 0 141px ;
-        margin: 0;
+    padding: 141px 141px 0 141px;
+    margin: 0;
 }
 
-.container-img{
+.container-img {
     display: flex;
     padding: 0;
     margin: 0;
@@ -105,19 +138,19 @@ margin-right: -5px;
 
 }
 
-.description-logo{
+.description-logo {
     padding-left: 141px;
 }
 
-.image-car{
+.image-car {
     padding-top: 225px;
     padding-bottom: 59px;
-    padding-right: 60px;    
+    padding-right: 60px;
 }
 
 /* slides bmw*/
 
-.description-bmw{
+.description-bmw {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -127,26 +160,26 @@ margin-right: -5px;
     margin-bottom: -150px;
 }
 
-.style-b{
+.style-b {
     color: #81C4FF;
     font-weight: bold;
 }
 
-.style-m{
+.style-m {
     font-weight: bold;
     color: #16588E;
 }
 
-.style-w{
+.style-w {
     font-weight: bold;
     color: #E7222E;
 }
 
 .b h2 {
-    margin: 19px 0 5px 0 ;
+    margin: 19px 0 5px 0;
 }
 
-.description-style{
+.description-style {
     font-size: 20px;
     font-weight: bold;
     margin: 0;
@@ -154,36 +187,41 @@ margin-right: -5px;
 
 /* slider */
 
-.slides{
+.slides {
     position: relative;
     z-index: -9;
 }
+
 .slider {
     z-index: -10;
     position: relative;
-    display: flex;    
-    align-items: center; 
+    display: flex;
+    align-items: center;
 }
 
 .models {
     position: relative;
 }
+
 .lines {
     position: relative;
     bottom: 0;
 }
+
 .car-models {
     position: absolute;
     bottom: 250px;
     left: 19px;
     z-index: 2;
 }
+
 .star {
     align-items: center;
     text-align: center;
     margin-top: -200px;
     padding-left: 20%;
 }
+
 .title-models {
     text-align: center;
     font-size: 72px;
@@ -191,13 +229,15 @@ margin-right: -5px;
     font-weight: 400;
     margin-bottom: 0;
 }
+
 .rating {
     text-align: center;
     margin-top: 0;
     font-size: 24px;
     padding-bottom: 30px;
 }
-.position__item-models{
+
+.position__item-models {
     padding-left: 0;
 }
 
@@ -207,8 +247,7 @@ margin-right: -5px;
     font-weight: bold;
 }
 
-.arrow{
-}
+.arrow {}
 
 .arrow-next {
     padding-left: 20px;
@@ -219,32 +258,32 @@ margin-right: -5px;
 
 .footer {
     position: relative;
-    z-index: 10;           
+    z-index: 10;
     background: #d3d3d3;
     padding: 40px 0 0 0;
-    margin-top: -280px;     
+    margin-top: -280px;
 }
 
-.thx{
+.thx {
     font-size: 32px;
 }
 
-.footer-text{
+.footer-text {
     text-align: center;
 }
 
-.footer-description{
+.footer-description {
     font-style: italic;
 }
 
-.sinestatator{
+.sinestatator {
     text-align: left;
     z-index: 100;
     margin: 0;
     padding-left: 20px;
     width: 150px;
     height: 50px;
-    
+
 }
 
 .footer-icons {
@@ -254,15 +293,9 @@ margin-right: -5px;
     align-items: center;
     padding-right: 20px;
     position: absolute;
-    right:0px;
+    right: 0px;
     width: 300px;
-    bottom:60px;
+    bottom: 60px;
 
-    
+
 }
-
-
-
-
-
-
