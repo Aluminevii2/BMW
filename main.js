@@ -26,48 +26,6 @@ BMW — это путь. Не кратчайший, а настоящий. <br><
 С уважением, <br>Aluminevii2
 </b>
 `;
-
-const copy = document.createElement("p");
-copy.classList.add("sinestatator");
-copy.innerHTML = "<b>© BMW AG 2025</b>";
-
-const icons = document.createElement("div");
-icons.classList.add("footer-icons");
-
-const socials = [
-    { src: "/data/home/tg.svg", alt: "Telegram" },
-    { src: "/data/home/inst.svg", alt: "Instagram" },
-    { src: "/data/home/x.svg", alt: "X" },
-    { src: "/data/home/reddit.svg", alt: "Reddit" }
-];
-
-socials.forEach(item => {
-    const a = document.createElement("a");
-    a.href = "#";
-
-    const img = document.createElement("img");
-    img.src = item.src;
-    img.alt = item.alt;
-
-    a.appendChild(img);
-    icons.appendChild(a);
-});
-
-footerText.appendChild(h2);
-footerText.appendChild(desc);
-footerText.appendChild(copy);
-footerText.appendChild(icons);
-
-background.appendChild(footerText);
-section.appendChild(background);
-
-document.getElementById("app").appendChild(section);
-
-
-
-
-
-
 const bestModelsBtn = document.getElementById("bestModelsBtn");
 const searchContainer = document.getElementById("searchContainer");
 const result = document.getElementById("result");
@@ -79,6 +37,16 @@ const models = {
     "x7": "data/home/x7.png"
 };
 
+
+function showModel(value) {
+    if (models[value]) {
+        result.innerHTML = `<img src="${models[value]}" width="400px">`;
+        localStorage.setItem("selectedBMW", value); 
+    } else {
+        result.innerHTML = "<p>Модель не найдена</p>";
+    }
+}
+
 bestModelsBtn.addEventListener("click", function (e) {
     e.preventDefault();
 
@@ -87,14 +55,20 @@ bestModelsBtn.addEventListener("click", function (e) {
         <button id="searchBtn">Поиск</button>
     `;
 
-    document.getElementById("searchBtn").addEventListener("click", function () {
-        const value = document.getElementById("searchInput").value.toLowerCase();
+    const searchInput = document.getElementById("searchInput");
+    const searchBtn = document.getElementById("searchBtn");
 
-        if (models[value]) {
-            result.innerHTML = `<img src="${models[value]}" width="400px">`;
-        } else {
-            result.innerHTML = "<p>Модель не найдена</p>";
-        }
+    searchBtn.addEventListener("click", function () {
+        const value = searchInput.value.toLowerCase();
+        showModel(value);
     });
 });
 
+
+window.addEventListener("DOMContentLoaded", function () {
+    const savedModel = localStorage.getItem("selectedBMW");
+
+    if (savedModel && models[savedModel]) {
+        showModel(savedModel);
+    }
+});
